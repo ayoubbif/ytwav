@@ -1,13 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube to WAV Converter</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+      <h1>YouTube to WAV Converter</h1>
+      <div class="steps">
+        <div class="step active" data-step="1">1</div>
+        <div class="step-line"></div>
+        <div class="step" data-step="2">2</div>
+      </div>
+      <form id="converter-form">
+        <div class="form-group">
+          <label for="url">YouTube URL:</label>
+          <div class="input-wrapper">
+            <input type="url" id="url" required placeholder="https://www.youtube.com/watch?v=...">
+            <button type="submit" class="primary-button">Convert</button>
+          </div>
+        </div>
+      </form>
+      <div class="progress-wrapper hidden">
+        <div class="progress-bar">
+          <div class="progress-value"></div>
+        </div>
+        <div class="progress-text">0%</div>
+      </div>
+      <div id="status"></div>
+      <div id="download-section" class="hidden">
+        <div class="file-info">
+          <span id="filename"></span>
+          <span id="file-size"></span>
+        </div>
+        <button id="download-button" class="primary-button">Download WAV</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="src/main.ts"></script>
+</body>
 </html>
