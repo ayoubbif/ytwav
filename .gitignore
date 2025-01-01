@@ -1,0 +1,43 @@
+# Backend
+__pycache__/
+*.py[cod]
+downloads/
+.env
+venv/
+*.log
+
+# Frontend
+node_modules/
+dist/
+.env
+*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db# Backend
+__pycache__/
+*.py[cod]
+downloads/
+.env
+venv/
+*.log
+
+# Frontend
+node_modules/
+dist/
+.env
+*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
