@@ -23,7 +23,7 @@ A fast and efficient YouTube to WAV converter with a modern web interface. Conve
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/ytwav.git
+git clone https://github.com/ayoubbif/ytwav.git
 cd ytwav
 ```
 
